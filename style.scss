@@ -175,6 +175,9 @@ body{
 /* ###################################### afther this styles for desktop starts ############################# */
 /* ###################################### afther this styles for desktop starts ############################# */
 @media screen and (min-width: 700px){
+    body{
+        overflowY: scroll;
+    }
     .container{
         margin: 200px;
         display: grid;

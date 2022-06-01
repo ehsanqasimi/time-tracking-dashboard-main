@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <!--user, its info, nav (daily, Weekly, Monthly)-->
+    <div class="user">
+      <div class="man">
+        <img src="images/image-jeremy.png" alt="jeremy.png">
+        <div class="text">
+          <p class="user-title">Report for</p>
+          <p class="name">Jeremy Robson</p>
+        </div>
+      </div>
+
+      <div class="nav">
+        <p class="daily" data-state="daily">Daily</p>
+        <p class="weekly active" data-state="weekly">Weekly</p>
+        <p class="monthly" data-state="monthly">Monthly</p>
+      </div>
+
+    </div>
+
+    <!--the amount of work he have done-->
+    <div class="work card">
+      <div class="mainCard">
+        <p class="title"></p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">32hrs</p>
+        <p class="pervius-hour">Last Week - 36hrs</p>
+      </div>
+    </div>
+
+    <!--time he wasted on playing-->
+    <div class="play card">
+      <div class="mainCard">
+        <p class="title">Play</p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">10hrs</p>
+        <p class="pervius-hour">Last Week - 8hrs</p>
+      </div>
+    </div>
+
+    <!--time spended on studying-->
+    <div class="study card">
+      <div class="mainCard">
+        <p class="title">Study</p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">4hrs</p>
+        <p class="pervius-hour">Last Week - 7hrs</p>
+      </div>
+    </div>
+
+    <!--timed spended on Exercises-->
+    <div class="exercise card">
+      <div class="mainCard">
+        <p class="title">Exercise</p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">4hrs</p>
+        <p class="pervius-hour">Last Week - 5hrs</p>
+      </div>
+    </div>
+
+    <!--time spended on social communication-->
+    <div class="social card">
+      <div class="mainCard">
+        <p class="title">Social</p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">5hrs</p>
+        <p class="pervius-hour">Last Week - 10hrs</p>
+      </div>
+    </div>
+
+    <!--time spended on selfCare-->
+    <div class="selfCare card">
+      <div class="mainCard">
+        <p class="title">Self Care</p>
+        <p class="ellipsis"><img src="./images/icon-ellipsis.svg" alt=""></p>
+        <p class="hour">2hrs</p>
+        <p class="pervius-hour">Last Week - 2hrs</p>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

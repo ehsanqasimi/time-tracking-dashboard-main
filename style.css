@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+.container {
+  margin: 50px 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+}
+
+.container .user {
+  height: 200px;
+  background-color: #6f00ff;
+  background-color: #1c1f4a;
+  border-radius: 10px;
+}
+
+.container .user .man {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #5847eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container .user .man .user-title {
+  color: #bdc1ff;
+}
+
+.container .user .man .name {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.container .user .man img {
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.container .user .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6f76c8;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+}
+
+.container .user .nav p {
+  cursor: pointer;
+}
+
+.container .user .nav p.active {
+  color: white;
+}
+
+.container .card.play {
+  background-color: #56c2e6;
+  background-image: url(images/icon-play.svg);
+}
+
+.container .card.study {
+  background-color: #ff5c7c;
+  background-image: url(images/icon-study.svg);
+}
+
+.container .card.study {
+  background-color: #ff5c7c;
+  background-image: url(images/icon-study.svg);
+}
+
+.container .card.exercise {
+  background-color: #4acf81;
+  background-image: url(images/icon-exercise.svg);
+}
+
+.container .card.social {
+  background-color: #7536d3;
+  background-image: url(images/icon-social.svg);
+}
+
+.container .card.selfCare {
+  background-color: #f1c65b;
+  background-image: url(images/icon-self-care.svg);
+}
+
+.container .card {
+  height: 160px;
+  background-color: #ff8c66;
+  border-radius: 15px;
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .card .mainCard {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  height: 80%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+  padding: 30px;
+}
+
+.container .card .mainCard .title {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container .card .mainCard .hour {
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.container .card .mainCard .ellipsis {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container .card .mainCard .ellipsis img {
+  height: 5px;
+  width: 20px;
+}
+
+.container .card .mainCard .pervius-hour {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bdc1ff;
+}
+
+.container .card .mainCard:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+@media screen and (min-width: 700px) {
+  .container {
+    margin: 200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    height: 100%;
+  }
+  .container .user {
+    background-color: #1c1f4a;
+    display: -ms-grid;
+    display: grid;
+    grid-row: 1 / -1;
+    border-radius: 15px;
+    height: 350px;
+  }
+  .container .user .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 20px;
+  }
+  .container .user .text .title {
+    font-size: 13px;
+  }
+  .container .user .text .name {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .container .user .man {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100%;
+  }
+  .container .user .man img {
+    width: 50px;
+    height: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container .card {
+    border-radius: 15px;
+  }
+  .container .card .mainCard {
+    padding-inline: 15px;
+    border-radius: 15px;
+  }
+  .container .card .mainCard .title {
+    font-size: 15px;
+  }
+  .container .card .mainCard .hour {
+    font-size: 25px;
+  }
+  .container .card .mainCard .pervius-hour {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100px;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

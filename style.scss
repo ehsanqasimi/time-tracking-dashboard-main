@@ -1,0 +1,246 @@
+//fonts and variables
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+$Blue: hsl(246, 80%, 60%);
+$LightRedYeah : hsl(15, 100%, 70%); //(work)
+$SoftBlue : hsl(195, 74%, 62%);  //(play)
+$LightRed : hsl(348, 100%, 68%); //(study)
+$LimeGreen : hsl(145, 58%, 55%); //(exercise)
+$Violet : hsl(264, 64%, 52%); //(social)
+$SoftOrange : hsl(43, 84%, 65%) ;//(self care)
+$VeryDarkBlue: hsl(226, 43%, 10%);
+$DarkBlue: hsl(235, 46%, 20%);
+$DesaturatedBlue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: $VeryDarkBlue;
+    font-size: 18px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.container{
+
+    margin: 50px 20px;
+    display: grid;
+    gap: 30px;
+    .user{
+        height: 200px;
+        background-color: rgb(111, 0, 255);
+        background-color: $DarkBlue;
+        border-radius: 10px;
+        .man{
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $Blue;
+            border-radius: 10px;
+            padding: 20px;
+            .user-title{
+                color: $PaleBlue;
+            }
+            .name{
+                color: white;
+                font-size: 25px;
+                font-weight: 300;
+            }
+            img{
+                height: 100%;
+                border: 3px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .nav{
+            display: flex;
+            color: $DesaturatedBlue;
+            justify-content: space-around;
+            align-items: center;
+            height: 40%;
+            p{
+                cursor: pointer;
+            }
+            p.active{
+                color: white;
+            }
+        }
+    }
+    .card.play{
+        background-color: $SoftBlue;
+        background-image: url(images/icon-play.svg);
+    }
+
+    .card.study{
+        background-color: $LightRed;
+        background-image: url(images/icon-study.svg);
+    }
+
+    .card.study{
+        background-color: $LightRed;
+        background-image: url(images/icon-study.svg);
+    }
+
+    .card.exercise{
+        background-color: $LimeGreen;
+        background-image: url(images/icon-exercise.svg);
+    }
+
+    .card.social{
+        background-color: $Violet;
+        background-image: url(images/icon-social.svg);
+    }
+
+    .card.selfCare{
+        background-color: $SoftOrange;
+        background-image: url(images/icon-self-care.svg);
+    }    
+
+    .card{
+        height: 160px;
+        background-color: $LightRedYeah;
+        border-radius: 15px;
+        background-image: url('images/icon-work.svg');
+        background-repeat: no-repeat;
+        background-position: 95% -10px;
+        display: flex;
+        align-items: flex-end;
+        .mainCard{
+            background-color: $DarkBlue;
+            border-radius: 15px;
+            height: 80%;
+            width: 100%;
+            display: grid;  
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 10px;
+            padding: 30px;
+            .title{
+                color: white;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .hour{
+                color: white;
+                font-weight: 300;
+                font-size: 40px;
+            }
+            .ellipsis{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                cursor: pointer;
+                img{
+                    height: 5px;
+                    width: 20px;
+
+                }
+            }
+
+            .pervius-hour{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                color: $PaleBlue;
+            }
+        }
+        .mainCard:hover{
+            background-color: $DesaturatedBlue;
+            transition: all ease .2s;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+/* ###################################### afther this styles for desktop starts ############################# */
+@media screen and (min-width: 700px){
+    .container{
+        margin: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        height: 100%;
+        .user{
+            background-color: $DarkBlue;
+            display: grid;
+            grid-row: 1 / -1;
+            border-radius: 15px;
+            height: 350px;
+            .nav{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+                width: 100%;
+                height: 100%;
+                padding-inline: 20px;
+            }
+            .text{
+                .title{
+                    font-size: 13px;
+                
+                }
+                .name{
+                    font-size: 30px;
+                    font-weight: 300;
+                }
+            }
+            .man{
+                display: flex;
+                padding: 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 100%;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    justify-content: flex-start;
+
+                }
+            }
+        }
+        .card{
+            border-radius: 15px;
+            .mainCard{
+                padding-inline: 15px;
+                .title{
+                    font-size: 15px;
+                }
+                border-radius: 15px;
+                .hour{
+                    font-size: 25px;
+                }
+                .pervius-hour{
+                    display: grid;
+                    grid-row: 3/4;
+                    justify-content: flex-start;
+                    width: 100px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
